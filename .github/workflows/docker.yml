@@ -28,4 +28,4 @@ jobs:
         run: docker images
       
       - name: Build and push docker image
-        run: docker build -f Dockerfile
+        run:  Get-Content -Raw Dockerfile | docker build -
